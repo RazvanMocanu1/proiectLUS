@@ -27,10 +27,15 @@ function App() {
     setCount(count + 1);
   };
 
+  const handleOffClick = () => {
+    setCount(count - 1);
+  };
+
   return (
   <div>
     <h1>{count}</h1>
-    <button onClick={handleOnClick}> Add 1 </button>
+    <button onClick={handleOffClick}> - </button>
+    <button onClick={handleOnClick}> + </button>
     <DistantaText count={count} />
   </div> 
   );
