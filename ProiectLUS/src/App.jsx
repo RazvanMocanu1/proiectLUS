@@ -33,9 +33,11 @@ function App() {
 
   return (
   <div>
-    <h1>{count}</h1>
+    <h1>Te afli la </h1>
+    <h1>{count} km</h1>
     <button onClick={handleOffClick}> - </button>
     <button onClick={handleOnClick}> + </button>
+    <h1>Momentan :</h1>
     <DistantaText count={count} />
   </div> 
   );
